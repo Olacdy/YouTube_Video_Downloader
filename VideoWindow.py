@@ -28,12 +28,16 @@ class VideoWindow(QtWidgets.QMainWindow):
         self.graphicsView.setScaledContents(True)
         self.graphicsView.setObjectName("graphicsView")
 
-        self.titleLabel: QtWidgets.QLabel = QtWidgets.QLabel(self.centralwidget)
-        self.titleLabel.setGeometry(QtCore.QRect(10, 160, 260, 80))
-        self.titleLabel.setStyleSheet("font: 75 12pt \"MS Shell Dlg 2\";")
+        self.titleLabel: ScaledLabel = ScaledLabel(self.centralwidget)
+        self.titleLabel.setGeometry(QtCore.QRect(12, 160, 260, 60))
+        self.titleLabel.setFont(QtGui.QFont('MS Shell Dlg 2', 12))
         self.titleLabel.setAlignment(QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop)
         self.titleLabel.setWordWrap(True)
         self.titleLabel.setObjectName("titleLabel")
+        size_policy = QSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
+        self.titleLabel.setSizePolicy(size_policy)
+        self.titleLabel.setScaledContents(True)
+        self.titleLabel.setMinimumSize(260, 60)
 
         self.formatComboBox: QtWidgets.QComboBox = QtWidgets.QComboBox(self.centralwidget)
         self.formatComboBox.setGeometry(QtCore.QRect(290, 10, 155, 35))
@@ -57,7 +61,7 @@ class VideoWindow(QtWidgets.QMainWindow):
         self.loaing_label.setGeometry(QtCore.QRect(330, 35, 200, 200))
         self.loaing_label.hide()
 
-        self.movie: QMovie = QMovie("F:\\Python\\Python Projects\\YouTubeDownload\\files\\loader_spinner.gif")
+        self.movie: QMovie = QMovie("files/loader_spinner.gif")
         self.loaing_label.setMovie(self.movie)
         self.movie.start()
 
@@ -95,3 +99,22 @@ class VideoWindow(QtWidgets.QMainWindow):
         self.setWindowTitle(_translate("MainWindow", "Download Video"))
         self.titleLabel.setText(_translate("MainWindow", "TextLabel"))
         self.audioCheckBox.setText(_translate("MainWindow", "Audio only"))
+
+
+class ScaledLabel(QLabel):
+
+    def resize_font(self):
+        if not self.hasScaledContents():
+            return
+
+        i = 0
+        self.setFont(QtGui.QFont('MS Shell Dlg 2', 12))
+        text = self.fontMetrics().boundingRect(self.text())
+        while True:
+            print(text.width() * text.height(), self.width() * self.height() - 1500)
+            if text.width() * text.height() < self.width() * self.height() - 1500:
+                return
+            else:
+                text = self.fontMetrics().boundingRect(self.text())
+                self.setFont(QtGui.QFont('MS Shell Dlg 2', 12-i))
+                i += 1

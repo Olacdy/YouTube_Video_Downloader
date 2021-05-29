@@ -24,7 +24,7 @@ class LoadingWindow(QtWidgets.QMainWindow):
         self.label.move((self.imitation_window.frameGeometry().width() - self.label.width()) / 2,
                         (self.imitation_window.frameGeometry().height() - self.label.height()) / 2)
 
-        self.movie: QMovie = QMovie("F:\\Python\\Python Projects\\YouTubeDownload\\files\\loader_spinner.gif")
+        self.movie: QMovie = QMovie("files/loader_spinner.gif")
         self.label.setMovie(self.movie)
         self.movie.start()
 

@@ -32,7 +32,6 @@ class VideoLoading(QThread):
         self.video_window.audio_items = audio_items
         self.video_window.video_items = video_items
 
-        print(self.video_window.titleLabel.fontMetrics().boundingRect(self.video_window.titleLabel.text()).width())
         self.video_window.fill_combobox()
 
 
