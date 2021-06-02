@@ -84,12 +84,31 @@ class VideoWindow(QtWidgets.QMainWindow):
 
     def handle_item_pressed(self, event) -> None:
         if self.audioCheckBox.isChecked():
-            self.download_thread = VideoDownload(self, self.audio_items[self.formatComboBox.currentText()])
+            self.download_thread = VideoDownload(self, self.audio_items[self.formatComboBox.currentText()],
+                                                 self.titleLabel.text())
         else:
-            self.download_thread = VideoDownload(self, self.video_items[self.formatComboBox.currentText()])
+            self.download_thread = VideoDownload(self, self.video_items[self.formatComboBox.currentText()],
+                                                 self.titleLabel.text())
         self.formatComboBox.setEnabled(False)
         self.loaing_label.show()
         self.download_thread.start()
+
+    def set_rounded_image(self, image: QImage):
+        pixmap = QPixmap(image)
+        radius = 30
+
+        rounded = QPixmap(pixmap.size())
+        rounded.fill(QColor("transparent"))
+
+        painter = QPainter(rounded)
+        painter.setRenderHint(QPainter.Antialiasing)
+        painter.setBrush(QBrush(pixmap))
+        painter.setPen(QtCore.Qt.NoPen)
+        painter.drawRoundedRect(pixmap.rect(), radius, radius)
+        painter.end()
+
+        self.graphicsView.setPixmap(rounded)
+        pass
 
     def get_link(self) -> None:
         return self.parent.lineEdit.text()
@@ -111,8 +130,8 @@ class ScaledLabel(QLabel):
         self.setFont(QtGui.QFont('MS Shell Dlg 2', 12))
         text = self.fontMetrics().boundingRect(self.text())
         while True:
-            print(text.width() * text.height(), self.width() * self.height() - 1500)
-            if text.width() * text.height() < self.width() * self.height() - 1500:
+            print(text.width() * text.height(), self.width() * self.height() - 2000)
+            if text.width() * text.height() < self.width() * self.height() - 2000:
                 return
             else:
                 text = self.fontMetrics().boundingRect(self.text())
