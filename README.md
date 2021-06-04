@@ -23,7 +23,7 @@ To download certain video user needs to input its link in first field and press 
 * <img width="40px" src="https://user-images.githubusercontent.com/1499751/120833934-0ae6c300-c56b-11eb-8b72-2c8ee89486a7.png"/>
 * <img width="100px" src="https://user-images.githubusercontent.com/1499751/120834084-3cf82500-c56b-11eb-914e-cea9f662e965.png"/>
 
-[Back To The Top](#YouTube Video Downloader)
+[Back To The Top](#youTube-video-downloader)
 
 ---
 
@@ -39,7 +39,7 @@ Run MainWindow.py with Python.
 
 Or you can use it through .exe file in Application directory, where you can find it.
 
-[Back To The Top](#YouTube Video Downloader)
+[Back To The Top](#youTube-video-downloader)
 
 #### Use Example
 
@@ -61,7 +61,7 @@ After clicking on one of the items in combo box list, the download will begin, o
 
 ![5](https://user-images.githubusercontent.com/1499751/120835251-be9c8280-c56c-11eb-8611-588a4c225847.PNG)
 
-[Back To The Top](#YouTube Video Downloader)
+[Back To The Top](#youTube-video-downloader)
 
 ---
 
@@ -91,7 +91,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-[Back To The Top](#YouTube Video Downloader)
+[Back To The Top](#youTube-video-downloader)
 
 ---
 
@@ -100,4 +100,4 @@ SOFTWARE.
 - Upwork - [Didechkin Oleg](https://www.upwork.com/freelancers/~01bc2c6d8b19205903)
 - Fiverr - [Didechkin Oleg](https://www.fiverr.com/dbofury)
 
-[Back To The Top](#YouTube Video Downloader)
+[Back To The Top](#youTube-video-downloader)
