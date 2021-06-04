@@ -570,32 +570,32 @@
    'f:\\python\\python '
    'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
+  ('pkg_resources._vendor.packaging.utils',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
   ('typing',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\typing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.specifiers',
    'f:\\python\\python '
    'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
+  ('pkg_resources._vendor.packaging.__about__',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.tags',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
    'PYMODULE'),
   ('ctypes',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ctypes\\__init__.py',
@@ -603,33 +603,13 @@
   ('ctypes._endian',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ctypes\\_endian.py',
    'PYMODULE'),
-  ('win32com.shell.shellcon',
+  ('pkg_resources._vendor.packaging.requirements',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\win32comext\\shell\\shellcon.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
-  ('win32com.shell',
+  ('pkg_resources._vendor.packaging._typing',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\win32comext\\shell\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.tags',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'f:\\python\\python '
@@ -660,13 +640,33 @@
    'f:\\python\\python '
    'interpreter\\youtubedownload\\lib\\site-packages\\win32\\lib\\netbios.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
+  ('pkg_resources._vendor.packaging._compat',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._typing',
+  ('pkg_resources._vendor',
    'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'PYMODULE'),
+  ('win32com.shell.shellcon',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\win32comext\\shell\\shellcon.py',
+   'PYMODULE'),
+  ('win32com.shell',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\win32comext\\shell\\__init__.py',
    'PYMODULE'),
   ('pkg_resources.extern',
    'f:\\python\\python '
@@ -678,11 +678,11 @@
   ('pathlib',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pathlib.py',
    'PYMODULE'),
-  ('stringprep',
-   'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stringprep.py',
    'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\Oleg\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tracemalloc.py',
@@ -792,10 +792,6 @@
   ('VideoThread',
    'F:\\Python\\Python Projects\\YouTube_Video_Downloader\\VideoThread.py',
    'PYMODULE'),
-  ('win10toast',
-   'f:\\python\\python '
-   'interpreter\\youtubedownload\\lib\\site-packages\\win10toast\\__init__.py',
-   'PYMODULE'),
   ('utils',
    'F:\\Python\\Python Projects\\YouTube_Video_Downloader\\utils.py',
    'PYMODULE'),
@@ -810,6 +806,10 @@
   ('hurry', '-', 'PYMODULE'),
   ('VideoWindow',
    'F:\\Python\\Python Projects\\YouTube_Video_Downloader\\VideoWindow.py',
+   'PYMODULE'),
+  ('win10toast',
+   'f:\\python\\python '
+   'interpreter\\youtubedownload\\lib\\site-packages\\win10toast\\__init__.py',
    'PYMODULE'),
   ('PyQt5',
    'f:\\python\\python '
