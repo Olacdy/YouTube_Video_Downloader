@@ -4,7 +4,6 @@ from pytube import YouTube, Stream, StreamQuery
 import urllib
 from utils import get_name_from_stream
 from PyQt5.QtWidgets import QMainWindow
-from win10toast import ToastNotifier
 
 
 class VideoLoading(QThread):
@@ -43,14 +42,13 @@ class VideoDownload(QThread):
         self.parent: QMainWindow = parent
         self.stream: Stream = stream
         self.title = title
-        self.toaster = ToastNotifier()
 
     def run(self) -> None:
         self.stream.download()
-        self.parent.formatComboBox.setEnabled(True)
-        self.parent.loaing_label.hide()
-
         try:
-            self.toaster.show_toast("Download finished!", self.title, icon_path='files/youtube_icon.ico', duration=5, threaded=True)
+            self.parent.toaster.show_toast("Download finished!", self.title, icon_path='files/youtube_icon.ico',
+                                    duration=5, threaded=True)
         except:
             pass
+        self.parent.formatComboBox.setEnabled(True)
+        self.parent.loaing_label.hide()

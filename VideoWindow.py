@@ -3,6 +3,7 @@ from VideoThread import VideoDownload
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+from win10toast import ToastNotifier
 
 
 class VideoWindow(QtWidgets.QMainWindow):
@@ -13,6 +14,7 @@ class VideoWindow(QtWidgets.QMainWindow):
         self.link: str = ""
         self.video_items: dict = {}
         self.audio_items: dict = {}
+        self.toaster = ToastNotifier()
 
     def initUI(self) -> None:
         self.setObjectName("MainWindow")
