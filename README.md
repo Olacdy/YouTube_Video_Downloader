@@ -13,9 +13,9 @@ Contents
 
 ## Description
 
-This application allows users to download YouTube video by its link.
+This application allows users to download YouTube videos by its link.
 
-To download certain video user needs to input its link in first field and press ***"Find Video"*** button. After loading all video streams, another window will pop up, where users can choose desirable format and quality of video as well as check audio only check box for only audio formats.
+To download a certain video user needs to input its link in the first field and press ***"Find Video"*** button. After loading all video streams, another window will pop up, where users can choose desired format and quality of the video as well as check the audio-only check box for only audio formats.
 
 #### Technologies
 
@@ -31,7 +31,7 @@ To download certain video user needs to input its link in first field and press 
 
 #### Installation
 
-To start using project from script, you need to have a Python 3.7+, download the repository and run command below to install all required dependencies to then use it.
+To start using the project from a script, you need to have a Python 3.7+, download the repository and run the command below to install all required dependencies to then use it.
 
 `pip install -r requirements.txt`
 
@@ -43,21 +43,21 @@ Or you can use it through .exe file in Application directory, where you can find
 
 #### Use Example
 
-When users open the application, they see a window, where they need to insert YouTube video link:
+When users open the application, they see a window, where they need to insert a YouTube video link:
 
 ![1](https://user-images.githubusercontent.com/1499751/120834624-f1924680-c56b-11eb-8030-b303cfc6ae28.PNG)
 
-After pressing ***"Find Video"*** button another window will pup up, where title and thumbnail will show up after loading all video streams:
+After pressing ***"Find Video"*** button another window will pop up, where the title and thumbnail will show up after loading all video streams:
 
 ![2](https://user-images.githubusercontent.com/1499751/120835613-38347080-c56d-11eb-9397-0083b3e3de14.PNG)
 
 ![3](https://user-images.githubusercontent.com/1499751/120834908-52218380-c56c-11eb-9b1a-100386f74e8a.PNG)
 
-In combo box next to thumbnail users can choose stream that is defined by format, quality and size:
+In combo box next to thumbnail users can choose a stream that is defined by format, quality, and size:
 
 ![4](https://user-images.githubusercontent.com/1499751/120835651-43879c00-c56d-11eb-9cd8-fb92d15bc9b4.PNG)
 
-After clicking on one of the items in combo box list, the download will begin, on Windows 10 end of download will be notified with toast:
+After clicking on one of the items in the combo box list, the download will begin, on Windows 10 end of download will be notified with a toast:
 
 ![5](https://user-images.githubusercontent.com/1499751/120835251-be9c8280-c56c-11eb-8611-588a4c225847.PNG)
 
